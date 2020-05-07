@@ -10,5 +10,6 @@ class handler(BaseHTTPRequestHandler):
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
     result = bourbon_notifier()
-    self.wfile.write(str(result).encode())
+    print(result)
+    # self.wfile.write(str(result).encode())
     return
